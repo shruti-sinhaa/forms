@@ -1,0 +1,160 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Body CSS */
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 14px;
+    padding: 23px;
+}
+
+.reg-page{
+    display: flex;
+}
+
+/* header's css */
+h1{
+    align-items: center;
+    font-family: 'Goldman', cursive;
+    text-align: center;
+    font-size: 52px;
+}
+
+h3{
+    align-items: center ;
+    font-family: 'Goldman', cursive;
+    text-align: center;
+    font-size: 16px;
+    color: #737376;
+}
+header{
+    margin: 100px;
+    border-radius: 40px;
+    background-color: #053666;
+}
+/* left and right container css */
+.left-container{
+    width: 50%;
+    /* background-color: rgb(0, 0, 0);
+    border-radius: 20px; */
+}
+.centres img{
+    height: 20%;
+    width: 20%;
+    z-index: -1;
+}
+/* Two horizontal inputs make constitute a 'set'  */
+.set{
+    display: flex;
+    width: 10%;
+    padding: 20px;
+    margin: 10px 0;
+    justify-content: space-between;
+    font-family: 'Goldman', cursive;
+    /* border: 2px solid white; -> uncomment this line to know what set class constitutes*/
+}
+/* CSS for input areas */
+.name label, .email label, .dob label, .gender label, .phone label{
+    width: 195px;
+    margin-bottom: 5px;
+    display: block;
+    color: #13b8f5;
+}
+.resume label{
+    color: #13b8f5;
+}
+#resume-button{
+    height: 30px;
+    width: 30px;
+    border: none;
+    background: url("https://drive.google.com/file/d/1LyravMY2EZbMEs1NeO9mLDvXo4qqtjDl/view?usp=sharing") no-repeat center center/cover;
+    cursor: pointer;
+}
+.left-container .resume{
+    align-items: center;
+    display: grid;
+    grid-template-areas: ". .";
+}
+.left-container .name, .dob, .email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name input, .phone input, .email input, .dob input{
+    border: none;
+    border-radius: 6px;
+    height: 25px;
+    width: 100%;
+}
+/* CSS for gender selection */
+.selection{
+    background: rgb(99, 99, 99);
+    border: 1px solid rgba(72, 70, 70, 0.1);
+    border-radius: 4px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.selection label{
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: 0.2s all ease-in-out;
+    width: 80px;
+    color: rgb(13, 12, 13);
+}
+
+.selection input[type=radio]{
+    display: none;
+}
+
+.selection input[type=radio]:checked + label{
+    background: #258ae9;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Button CSS */
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+}
+
+#apply{
+    background-color: rgb(11, 36, 124);
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    font-size: 20px;
+    width: 350px;
+    color: white;
+    cursor: pointer;
+}
+
+#apply:hover{
+    background-color: rgb(73, 123, 232);
+    border: none;
+    border-radius: 15px;
+    height: 40px;
+    font-size: 20px;
+    width: 350px;
+    color: rgb(219, 209, 209);
+}
+
+/* End line */
+footer {
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+}
